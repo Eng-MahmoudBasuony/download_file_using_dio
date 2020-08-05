@@ -53,8 +53,8 @@ class _HomePageState extends State<HomePage> {
   {
     var dio = Dio();
     String path=await ExtStorage.getExternalStoragePublicDirectory(ExtStorage.DIRECTORY_DOWNLOADS);
-    String fullPath="$path/basuony2.txt";
+    String fullPath="$path/SampleData.zip";
 
-    ServiceDownload.download2(dio: dio,url: ApiService.txtTest,savePath: fullPath);
+    ServiceDownload.download2(dio: dio,url: ApiService.zipTest,savePath: fullPath);
   }
 }
